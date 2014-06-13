@@ -11,28 +11,7 @@ namespace Test
 {
     public class Program
     {
-        [STAThread]
         static void Main(string[] args)
-        {
-            MFilesServerApplication server = new MFilesServerApplication();
-            server.Connect();
-            Vault vault = server.LogInToVault("{B567121D-E666-4333-904F-D4EB81D66FDC}");
-
-            //PropertyDefAdmin pda = vault.PropertyDefOperations.GetPropertyDefAdmin(1165);
-            //Console.WriteLine(pda.PropertyDef.GUID);
-            //Clipboard.SetText(pda.PropertyDef.GUID);
-            ValueListItems classes =
-                vault.ValueListItemOperations.GetValueListItems((int)MFBuiltInValueList.MFBuiltInValueListClasses);
-            foreach (ValueListItem vl in classes)
-            {
-                Console.WriteLine(vl.Name + " " + vl.ItemGUID);
-            }
-            Console.WriteLine();
-            Console.Write("Press any key to exit...");
-            Console.ReadKey();
-        }
-
-        public void FakeTest()
         {
             MFilesServerApplication server = new MFilesServerApplication();
             server.Connect();

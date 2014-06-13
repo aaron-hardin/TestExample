@@ -44,6 +44,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\TestSuite\MFiles.TestSuite\MFiles.TestSuite.csproj">
+      <Project>{1e9f8e88-44d0-4385-904f-cd12fb6ec480}</Project>
+      <Name>MFiles.TestSuite</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Test\Test.csproj">
       <Project>{8ea3a3f4-cbd9-428a-86d7-07b2005588de}</Project>
       <Name>Test</Name>
